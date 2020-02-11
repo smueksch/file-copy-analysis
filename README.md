@@ -1,6 +1,6 @@
 # Overview
 
-This is a small project to investigate two different, stripped-down implementations of the ```cp``` command. The first, ```rw-cp``, will use ```read()``` and ```write()``` system calls, whereas the second, ```mmap-cp``` will use ```mmap()``` and ```memcpy()``` system calls.
+This is a small project to investigate two different, stripped-down implementations of the ```cp``` command. The first, ```rw-cp```, will use ```read()``` and ```write()``` system calls, whereas the second, ```mmap-cp``` will use ```mmap()``` and ```memcpy()``` system calls.
 
 # Compilation
 
