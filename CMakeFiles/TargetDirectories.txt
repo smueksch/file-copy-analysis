@@ -1,0 +1,4 @@
+/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/CMakeFiles/rebuild_cache.dir
+/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/CMakeFiles/edit_cache.dir
+/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/CMakeFiles/mmap-cp.dir
+/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/CMakeFiles/rw-cp.dir
