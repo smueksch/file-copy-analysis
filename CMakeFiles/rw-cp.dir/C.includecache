@@ -7,8 +7,14 @@
 #IncludeRegexTransform: 
 
 /Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/src/rw-cp/main.c
+stdlib.h
+-
 stdio.h
 -
 stdbool.h
+-
+fcntl.h
+-
+unistd.h
 -
 
