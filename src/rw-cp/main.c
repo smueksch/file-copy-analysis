@@ -20,23 +20,34 @@ void print_usage() {
     printf("$ rw-cp <source> <destination>\n");
 }
 
+// Return file descriptor upon success, otherwise aborts program.
+int open_file(char* path, int flags) {
+    int file_descriptor = open(path, flags);
+
+    HANDLE_IO_ERROR(file_descriptor, "Error opening file");
+
+    return file_descriptor;
+}
+
+void close_file(int file_descriptor) {
+    int closing_code = close(file_descriptor);
+
+    HANDLE_IO_ERROR(closing_code, "Error closing file");
+}
+
 int main(int arg_c, char** arg_v) {
     if (arg_c >= REQUIRED_CLI_ARGUMENTS) {
-        printf("Copying %s to %s...\n", arg_v[1], arg_v[2]);
-
-        char* path = arg_v[1];
-        int file_descriptor = open(path, O_RDONLY);
-
-        HANDLE_IO_ERROR(file_descriptor, "Error opening source file");
+        int file_descriptor = open_file(arg_v[1], O_RDONLY);
 
         char file_buffer[128];
         ssize_t num_bytes_read = read(file_descriptor, file_buffer, 128);
 
         HANDLE_IO_ERROR(num_bytes_read, "Error reading source file");
 
+        file_buffer[num_bytes_read] = '\0';
         printf("File content:\n%s\n", file_buffer);
 
-        HANDLE_IO_ERROR(close(file_descriptor), "Error closing source file");
+        close_file(file_descriptor);
 
         exit(EXIT_SUCCESS);
     } else {
