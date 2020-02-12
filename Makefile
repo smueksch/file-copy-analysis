@@ -163,6 +163,33 @@ src/mmap-cp/main.c.s:
 	$(MAKE) -f CMakeFiles/mmap-cp.dir/build.make CMakeFiles/mmap-cp.dir/src/mmap-cp/main.c.s
 .PHONY : src/mmap-cp/main.c.s
 
+src/rw-cp/fileio.o: src/rw-cp/fileio.c.o
+
+.PHONY : src/rw-cp/fileio.o
+
+# target to build an object file
+src/rw-cp/fileio.c.o:
+	$(MAKE) -f CMakeFiles/rw-cp.dir/build.make CMakeFiles/rw-cp.dir/src/rw-cp/fileio.c.o
+.PHONY : src/rw-cp/fileio.c.o
+
+src/rw-cp/fileio.i: src/rw-cp/fileio.c.i
+
+.PHONY : src/rw-cp/fileio.i
+
+# target to preprocess a source file
+src/rw-cp/fileio.c.i:
+	$(MAKE) -f CMakeFiles/rw-cp.dir/build.make CMakeFiles/rw-cp.dir/src/rw-cp/fileio.c.i
+.PHONY : src/rw-cp/fileio.c.i
+
+src/rw-cp/fileio.s: src/rw-cp/fileio.c.s
+
+.PHONY : src/rw-cp/fileio.s
+
+# target to generate assembly for a file
+src/rw-cp/fileio.c.s:
+	$(MAKE) -f CMakeFiles/rw-cp.dir/build.make CMakeFiles/rw-cp.dir/src/rw-cp/fileio.c.s
+.PHONY : src/rw-cp/fileio.c.s
+
 src/rw-cp/main.o: src/rw-cp/main.c.o
 
 .PHONY : src/rw-cp/main.o
@@ -203,6 +230,9 @@ help:
 	@echo "... src/mmap-cp/main.o"
 	@echo "... src/mmap-cp/main.i"
 	@echo "... src/mmap-cp/main.s"
+	@echo "... src/rw-cp/fileio.o"
+	@echo "... src/rw-cp/fileio.i"
+	@echo "... src/rw-cp/fileio.s"
 	@echo "... src/rw-cp/main.o"
 	@echo "... src/rw-cp/main.i"
 	@echo "... src/rw-cp/main.s"

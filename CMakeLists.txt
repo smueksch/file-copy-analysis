@@ -11,7 +11,7 @@ set(MMAP_SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/mmap-cp)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
 
 # Add the executables:
-add_executable(rw-cp ${RW_SRC_DIR}/main.c)
+add_executable(rw-cp ${RW_SRC_DIR}/fileio.c ${RW_SRC_DIR}/main.c)
 add_executable(mmap-cp ${MMAP_SRC_DIR}/main.c)
 
 # Set C standard for executables:
