@@ -4,16 +4,16 @@
 //
 // If creation of file fails, which may be due to the file already existing,
 // then an error message is printed and the program is aborted.
-int create_file(char* path) {
-    int file_descriptor = open(path, FILE_CREATE_FLAGS, NEW_FILE_PERMISSIONS);
+file_t create_file(char* path) {
+    file_t file_descriptor = open(path, FILE_CREATE_FLAGS, NEW_FILE_PERMISSIONS);
     HANDLE_IO_ERROR(file_descriptor, "Error creating file");
 
     return file_descriptor;
 }
 
 // Return file descriptor to opened file upon success, otherwise aborts program.
-int open_file(char* path, int flags) {
-    int file_descriptor = open(path, flags);
+file_t open_file(char* path, int flags) {
+    file_t file_descriptor = open(path, flags);
     HANDLE_IO_ERROR(file_descriptor, "Error opening file");
 
     return file_descriptor;

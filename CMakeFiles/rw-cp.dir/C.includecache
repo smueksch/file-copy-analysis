@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/src/rw-cp/fileio.c
+fileio.h
+/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/src/rw-cp/fileio.h
+
 /Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/src/rw-cp/fileio.h
 stdlib.h
 -
@@ -15,14 +19,4 @@ fcntl.h
 -
 unistd.h
 -
-
-/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/src/rw-cp/main.c
-stdlib.h
--
-stdio.h
--
-stdbool.h
--
-fileio.h
-/Users/LIN/Nextcloud/university/ug-4/phd-applications/file-copy-analysis/src/rw-cp/fileio.h
 
